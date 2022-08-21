@@ -34,10 +34,10 @@ GitHub Actions allows you to build your app on macOS, Windows and Linux without 
          - name: Install Node.js, NPM and Yarn
            uses: actions/setup-node@v1
            with:
-             node-version: 10
+             node-version: 16
 
          - name: Build/release Electron app
-           uses: samuelmeuli/action-electron-builder@v1
+           uses: wenwuwu/action-electron-forge@v1.4.0
            with:
              # GitHub token, automatically provided to the action
              # (No need to define this secret in the repo settings)
