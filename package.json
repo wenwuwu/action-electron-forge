@@ -1,6 +1,6 @@
 {
 	"name": "action-electron-forge",
-	"version": "1.4.1",
+	"version": "1.4.0",
 	"description": "GitHub Action for building and releasing Electron apps",
 	"author": {
 		"name": "Wenwu Wu",
