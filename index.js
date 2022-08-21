@@ -120,8 +120,11 @@ const runAction = () => {
 
 	try {
 		log(`Building${release ? " and releasing" : ""} the Electron app…`);
+
+        //`npx electron-forge publish`,
+        
 		run(
-			`npx electron-forge publish`,
+            'npm run make',
 			appRoot,
 		);
 	} catch(err) {
