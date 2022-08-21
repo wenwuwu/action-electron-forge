@@ -1,0 +1,28 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/Users/wuwenwu/work/action-electron-forge/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/b0bb484d/
+appRoot	index.js	/^	const appRoot = getInput("app_root") || pkgRoot;$/;"	C
+buildScriptName	index.js	/^	const buildScriptName = getInput("build_script_name", true);$/;"	C
+exit	index.js	/^const exit = (msg) => {$/;"	C
+getEnv	index.js	/^const getEnv = (name) => process.env[name.toUpperCase()] || null;$/;"	C
+getInput	index.js	/^const getInput = (name, required) => {$/;"	C
+getPlatform	index.js	/^const getPlatform = () => {$/;"	C
+log	index.js	/^const log = (msg) => console.log(`\\n${msg}`); \/\/ eslint-disable-line no-console$/;"	C
+pkgJsonPath	index.js	/^	const pkgJsonPath = join(pkgRoot, "package.json");$/;"	C
+pkgLockPath	index.js	/^	const pkgLockPath = join(pkgRoot, "package-lock.json");$/;"	C
+pkgRoot	index.js	/^	const pkgRoot = getInput("package_root", true);$/;"	C
+platform	index.js	/^	const platform = getPlatform();$/;"	C
+release	index.js	/^	const release = getInput("release", true) === "true";$/;"	C
+run	index.js	/^const run = (cmd, cwd) => execSync(cmd, { encoding: "utf8", stdio: "inherit", cwd });$/;"	C
+runAction	index.js	/^const runAction = () => {$/;"	C
+setEnv	index.js	/^const setEnv = (name, value) => {$/;"	C
+skipBuild	index.js	/^	const skipBuild = getInput("skip_build") === "true";$/;"	C
+value	index.js	/^	const value = getEnv(`INPUT_${name}`);$/;"	C
