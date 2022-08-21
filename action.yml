@@ -26,6 +26,11 @@ inputs:
     description: Directory where NPM/Yarn commands should be run
     required: false
     default: "."
+  rebuild:
+    description: Whether the app should run rebuild script
+    required: false
+    default: false
+  windows_certs:
   build_script_name:
     description: Name of the optional NPM build script which is executed before `electron-builder`
     required: false
