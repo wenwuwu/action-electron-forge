@@ -122,11 +122,8 @@ const runAction = () => {
 		log(`Building${release ? " and releasing" : ""} the Electron app…`);
 
         //`npx electron-forge publish`,
-        
-		run(
-            'npm run make',
-			appRoot,
-		);
+		run('npm run make', appRoot);
+
 	} catch(err) {
 		log(`Failed with an error, probably the "it already exists" one`)
 		log(err.message)
