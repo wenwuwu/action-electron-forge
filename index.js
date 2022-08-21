@@ -106,6 +106,10 @@ const runAction = () => {
 	log(`Installing dependencies using NPM…`);
 	run("npm install", pkgRoot);
 
+    if (rebuild) {
+        run(`npm run rebuild --if-present`, pkgRoot);
+    }
+
 	// Run NPM build script if it exists
 	if (skipBuild) {
 		log("Skipping build script because `skip_build` option is set");
@@ -113,10 +117,6 @@ const runAction = () => {
 		log("Running the build script…");
 		run(`npm run ${buildScriptName} --if-present`, pkgRoot);
 	}
-
-    if (rebuild) {
-        run(`npm run rebuild --if-present`, pkgRoot);
-    }
 
 	try {
 		log(`Building${release ? " and releasing" : ""} the Electron app…`);
