@@ -96,8 +96,10 @@ const runAction = () => {
 		setEnv("CSC_LINK", getInput("mac_certs"));
 		setEnv("CSC_KEY_PASSWORD", getInput("mac_certs_password"));
 	} else if (platform === "windows") {
-		setEnv("CSC_LINK", getInput("windows_certs"));
-		setEnv("CSC_KEY_PASSWORD", getInput("windows_certs_password"));
+		//setEnv("CSC_LINK", getInput("windows_certs"));
+		//setEnv("CSC_KEY_PASSWORD", getInput("windows_certs_password"));
+		setEnv("WINDOWS_PFX_FILE", getInput("win_certs_path"));
+		setEnv("WINDOWS_PFX_PASSWORD", getInput("win_certs_password"));
 	}
 
 	// Disable console advertisements during install phase

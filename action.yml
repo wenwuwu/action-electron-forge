@@ -22,6 +22,12 @@ inputs:
   windows_certs_password:
     description: Password for decrypting `windows_certs`
     required: false
+  win_certs_path:
+    description: Path to code signing certificate pfx file for Windows
+    required: false
+  win_certs_password:
+    description: Password for decrypting file of `win_certs_path`
+    required: false
   package_root:
     description: Directory where NPM/Yarn commands should be run
     required: false
