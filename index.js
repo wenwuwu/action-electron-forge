@@ -104,7 +104,7 @@ const runAction = () => {
 	setEnv("ADBLOCK", true);
 
 	log(`Installing dependencies using NPM…`);
-	run("npm install", pkgRoot);
+	run("npm ci", pkgRoot);
 
     if (rebuild) {
         run(`npm run rebuild --if-present`, pkgRoot);
